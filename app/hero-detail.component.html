@@ -1,0 +1,22 @@
+<div *ngIf='hero' style=" margin: 30px;">
+    <h2>{{hero.name}} details!</h2>
+    <div><label>id: </label>{{hero.id}}</div>
+    <div><label>name: </label>
+        <input [(ngModel)]="hero.name" placeholder='name'></div>
+    <button (click)="goBack()">Back</button>
+    <div class="row">
+    <button (click)="myModal.open()">view chart</button>
+    <modal #myModal>
+        <modal-header>
+            <h1>{{hero.name}} - CHART</h1>
+        </modal-header>
+        <modal-content>
+           <my-chart></my-chart>
+        </modal-content>
+        <modal-footer>
+            <button class="btn btn-primary" (click)="myModal.close()">close</button>
+        </modal-footer>
+    </modal>
+</div>
+    <!--<my-chart></my-chart>-->
+</div>
