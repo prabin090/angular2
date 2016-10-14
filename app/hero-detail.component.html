@@ -4,6 +4,7 @@
     <div><label>name: </label>
         <input [(ngModel)]="hero.name" placeholder='name'></div>
     <button (click)="goBack()">Back</button>
+
     <div class="row">
     <button (click)="myModal.open()">view chart</button>
     <modal #myModal>
@@ -17,6 +18,7 @@
             <button class="btn btn-primary" (click)="myModal.close()">close</button>
         </modal-footer>
     </modal>
+    <simple-notifications [options]="options" (onCreate)="created($event)" (onDestroy)="destroyed($event)"></simple-notifications>
 </div>
     <!--<my-chart></my-chart>-->
 </div>

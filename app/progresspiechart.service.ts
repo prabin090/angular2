@@ -214,7 +214,7 @@ export class ProgressPieChartService {
             };
 
             setTimeout(animate, 0);
-        }, 1000)
+        }, 1500)
     }
 
 

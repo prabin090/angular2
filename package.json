@@ -33,6 +33,7 @@
     "@angular/upgrade": "2.0.0",
     "@types/d3": "^3.5.36",
     "angular-in-memory-web-api": "~0.1.0",
+    "angular2-notifications": "^0.4.4",
     "bootstrap": "^3.3.6",
     "core-js": "^2.4.1",
     "d3": "^3.5.17",

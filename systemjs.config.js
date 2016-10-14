@@ -29,6 +29,7 @@
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api',
       'd3': 'node_modules/d3',
       "ng2-modal": "node_modules/ng2-modal",
+      'angular2-notifications': 'node_modules/angular2-notifications'
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
@@ -46,7 +47,8 @@
 
       'd3': { defaultExtension: 'js' }
       ,
-      "ng2-modal": { "main": "index.js", "defaultExtension": "js" }
+      "ng2-modal": { "main": "index.js", "defaultExtension": "js" },
+      'angular2-notifications': { main: 'components.js', defaultExtension: 'js' }
 
     }
   });
